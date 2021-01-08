@@ -343,8 +343,8 @@
                           <!-- NAME FOR MESSAGE/EMAIL DIVIsION -->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                              <div class="validate"></div>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                              
                             </div>
                           </div>
                           <!-- END OF NAME FOR MESSAGE/EMAIL DIVIsION -->
@@ -353,8 +353,8 @@
                           <!-- EMAIL FOR MESSAGE/EMAIL DIVIsION -->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                              <div class="validate"></div>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
+                             
                             </div>
                           </div>
                           <!-- END OF EMAIL FOR MESSAGE/EMAIL DIVIsION -->
@@ -362,8 +362,8 @@
                           <!-- SUBJECT FOR MESSAGE/EMAIL DIVIsION -->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                              <div class="validate"></div>
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"required>
+                              
                             </div>
                           </div>
                           <!-- END OF SUBJECT FOR MESSAGE/EMAIL DIVIsION-->
@@ -372,8 +372,8 @@
                           <!-- MESSAGE FOR EMAIL DIVIsION -->
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for me" placeholder="Message"></textarea>
-                              <div class="validate"></div>
+                              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for me" placeholder="Message" required></textarea>
+                              
                             </div>
                           </div>
                           <!-- END OF MESSAGE FOR EMAIL SECTION -->
@@ -389,10 +389,8 @@
                           <div class="col-md-12 text-center">
                             <button type="submit" id="button" class="button button-a button-big button-rouded">Send Message</button>
                           </div>
-                        </div>
-                        <!-- END OF ROW DIVISION -->
-                      </form>
-                      <!-- END OF FORM -->
+                        </div> <!-- END OF ROW DIVISION -->
+                      </form> <!-- END OF FORM -->
                     </div> <!-- END OF FORM DIVIsION-->
                   </div> <!-- END OF COL-MD-6 DIVIsION -->
 
@@ -674,10 +672,7 @@
             <div class="body-message">
               <h4>Scripts</h4>
               <p>  
-                I have created a simple wifi configuration script for when I need to use a usb tether. 
-                It is important because openBSD does not readily have wifi drivers. 
-                I have create a brightness configuration script for when I am on the FVWM and terminal. 
-                I have create a script for FVWM for when I am attaching to my monitor. 
+                a simple wificonfig script.
               </p>
             </div>
           </div>                    
