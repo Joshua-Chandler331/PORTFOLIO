@@ -148,10 +148,18 @@
     items: 1
   });
 
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function() {
+    $('.venobox').venobox({
+      'share': false
+    });
+  });
+
+})(jQuery);
 
 /* BEGINNING OF CODE FOR EMAIL SUBMITT FORM FOR EMAIL CODE */
 
-const btn = document.getElementById('button');
+const btn = document.getElementById('sendButton');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
@@ -164,23 +172,38 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+    /* Sweet Alert Success */
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Something was successful!',
+        backdrop: `grey transparent`,
+      }) /* Sweet Alert Success Ends */
+      document.getElementById("form").reset();
     }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-
-
+    /* Sweet Alert Error */
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: json.stringify(err),
+        backdrop: `grey transparent`,
+      })/* Sweeat Alert Error */
+      document.getElementById("form").reset();     
+    }); /* end then statement */
+});/* end emailjs send form */
 /* END OF CODE FOR THE SUBMIT FORM FOR EMAIL CODE*/
 
 
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox({
-      'share': false
-    });
-  });
 
-})(jQuery);
+/* TEMPORARY JS */
+/* NEW UNDER CONSTRUCTION  */
+function myFunction(){
+  Swal.fire({
+    title:'UNDER CONSTRUCNTION     ( NOT A SCAM LOL)',
+    width: 600,
+    padding: '3em',
+    background: `url(assets/img/WorkingOnIT.gif)`,
+  })
+}
+/* END UNDER CONSTRUCTION */

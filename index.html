@@ -61,9 +61,9 @@
             <a class="nav-link js-scroll active" href="blog-single.html">Blog</a>
           </li>
 
-          <!-- BIO LIST -->
+          <!-- ABOUT LIST -->
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#bio">Bio</a>
+            <a class="nav-link js-scroll" href="#about">About</a>
           </li>
 
           <!-- SERVICES LIST -->
@@ -111,9 +111,9 @@
 
   <main id="main">
     <!-- ================================================================================================================================================================================ -->
-    <!-- ====================================================================== BEGIN BIO SECTION  ====================================================================================== -->
+    <!-- ====================================================================== BEGIN about SECTION  ====================================================================================== -->
     <!-- ================================================================================================================================================================================ -->
-    <section id="bio" class="about-mf sect-pt4 route">
+    <section id="about" class="about-mf sect-pt4 route">
 
       <!-- START CONTAINER -->
       <div class="container">
@@ -133,7 +133,7 @@
                   <div class="row">
                     <div class="col-sm-10 col-md-10">
                       <div>
-                        <h2>BIO </h2>
+                        <h2> About me</h2>
                       </div>
                     </div>
                     <div class="col-sm-10 col-md-10">
@@ -163,9 +163,9 @@
           </div> <!-- END COL-SM-12 DIVIsION -->
         </div> <!-- END ROW DIVIsION -->
       </div> <!-- END CONTAINER DIVIsION -->
-    </section> <!-- End Bio Section -->
+    </section> <!-- End about Section -->
     <!-- ================================================================================================================================================================================= -->
-    <!-- =========================================================================== END BIO SECTION =====================================================================================-->
+    <!-- =========================================================================== END about SECTION =====================================================================================-->
     <!-- ================================================================================================================================================================================= -->
 
 
@@ -387,8 +387,9 @@
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                           </div>
                          -->
+                         
                           <div class="col-md-12 text-center">
-                            <button type="submit" id="button" class="button button-a button-big button-rouded">Send Message</button>
+                            <button type="submit" id="sendButton" class="button button-a button-big button-rouded">Send Message</button>
                           </div>
                         </div> <!-- END OF ROW DIVISION -->
                       </form> <!-- END OF FORM -->
@@ -468,150 +469,91 @@
       </div> <!-- END ROW DIVIsION -->
     </div> <!-- END CONTAINER DIVIsION -->
   </footer><!-- End  Footer -->
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <!-- ================================================================================================================================================================================== -->
+  <!-- ============================================================================== END FOOTER ======================================================================================== -->
+  <!-- ================================================================================================================================================================================== -->
 
-  <!-- JAVA SCRIPT FOR SEND EMAIL UNDER CONTACT SECTION -->
-  
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-  </script>
 
-  <script type="text/javascript">
-   emailjs.init('user_6KnwgniTfNXhnbictDiLQ')
-  </script>
+  <!-- ================================================================================================================================================================================== -->
+  <!-- ================================================================================ START MODALS ==================================================================================== -->
+  <!-- ================================================================================================================================================================================== -->
 
-<!-- END OF JAVA SCRIPT FOR SEND EMAIL UNDER CONTACT SECTION -->
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
-  <script type="text/javascript">
-  emailjs.init('user_6KnwgniTfNXhnbictDiLQ')
-  </script>
-
-  <!-- END OF MAIN JS FILE -->
-
-  <!-- ==================================================================================================================================================================== -->
-  <!-- ========================================================================= MODALS =================================================================================== -->
+  <!-- CHECK W-100 IN h4 class needs to be moved to css keep css for styles & possibly remove h4.. hackish.. TOO MUCH TIME RIGHT NOW -->
+  <!-- MAYBE LATER CHANGE THE CLOSE TO A GITHUV URL OR TO MY BLOG POST -->
 
   <!-- THE JAVA MODAL STARTS-->
-    <div id="javaModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <!-- Modal Content: begins -->
-       <div class="modal-content">
+  <div id="javaModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- Modal Content: begins -->
+     <div class="modal-content">
+      <!-- Modal Header -->
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-x"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title w-100" id="gridSystemModalLabel" ><!--Title--></h4> 
+        </div>
+        <!-- Modal Body -->  
+        <div class="modal-body">
+          <div class="body-message">
+            <h4>Java</h4>
+            <p>Created a ATM program, Dice rolls program, Transactions, crapsgame.</p>
+          </div>
+        </div>                    
+      <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>                   
+      </div>
+    </div>
+  </div>
+    <!-- Modal Content: ends -->  
+    <!-- JAVA MODAL ENDS -->
+
+<!-- WEB MODAL STARTS -->
+  <div id="webModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- Modal Content: begins -->
+      <div class="modal-content">
         <!-- Modal Header -->
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">Java</h4>
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title w-100" id="gridSystemModalLabel"><!--Title--></h4>
+        </div>
+        <!-- Modal Body -->  
+        <div class="modal-body">
+          <div class="body-message">
+            <h4>Web Development</h4>
+            <p>Created this website with the help of CoderFoundry, and DevFolio.</p>
           </div>
-          <!-- Modal Body -->  
-          <div class="modal-body">
-            <div class="body-message">
-              <h4>Some Things Java</h4>
-              <p>Created this website with the help of CoderFoundry, and DevFolio.</p>
-            </div>
-          </div>                    
+        </div>                    
         <!-- Modal Footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>                   
-        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>                   
       </div>
     </div>
-      <!-- Modal Content: ends -->  
-      <!-- JAVA MODAL ENDS -->
+  </div>
+      <!-- Modal Content: ends --> 
+<!-- WEB MODAL ENDS -->
 
-  <!-- WEB MODAL STARTS -->
-    <div id="webModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+<!-- The OPENBSD MODAL STARTS -->
+    <div id="openbsdModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <!-- Modal Content: begins -->
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">WEB</h4>
+              <h4 class="modal-title w-100" id="gridSystemModalLabel"><!--Title--></h4>
           </div>
           <!-- Modal Body -->  
           <div class="modal-body">
             <div class="body-message">
-              <h4>Web Development</h4>
-              <p>Created this website with the help of CoderFoundry, and DevFolio.</p>
-            </div>
-          </div>                    
-          <!-- Modal Footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>                   
-        </div>
-      </div>
-    </div>
-        <!-- Modal Content: ends --> 
-  <!-- WEB MODAL ENDS -->
-
-
-  <!-- The OPENBSD MODAL STARTS -->
-      <div id="openbsdModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <!-- Modal Content: begins -->
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="gridSystemModalLabel">OpenBSD</h4>
-            </div>
-            <!-- Modal Body -->  
-            <div class="modal-body">
-              <div class="body-message">
-                <h4>openBSD</h4>
-                <p>  I have created a simple wifi configuration script for when I need to use a usb tether. 
-                     It is important because openBSD does not readily have wifi drivers. 
-                     I have create a brightness configuration script for when I am on the FVWM and terminal. 
-                     I have create a script for FVWM for when I am attaching to my monitor. 
-                </p>
-              </div>
-            </div>                    
-            <!-- Modal Footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>                   
-          </div>
-        </div>
-      </div>
-          <!-- Modal Content: ends -->    
-        <!-- THE OPBENBSD MODAL ENDS --> 
-
-    <!-- C-PROGRAMMING MODAL STARTS -->
-    <div id="cprogrammingModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <!-- Modal Content: begins -->
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">C-Programming</h4>
-          </div>
-          <!-- Modal Body -->  
-          <div class="modal-body">
-            <div class="body-message">
-              <h4>C-Programming</h4>
-              <p>  
-                   I have created a simple wifi configuration script for when I need to use a usb tether. 
+              <h4>openBSD</h4>
+              <p>  I have created a simple wifi configuration script for when I need to use a usb tether. 
                    It is important because openBSD does not readily have wifi drivers. 
                    I have create a brightness configuration script for when I am on the FVWM and terminal. 
                    I have create a script for FVWM for when I am attaching to my monitor. 
@@ -626,74 +568,147 @@
       </div>
     </div>
         <!-- Modal Content: ends -->    
-    <!-- C-PROGRAMMING MODAL ENDS --> 
+      <!-- THE OPBENBSD MODAL ENDS --> 
+
+  <!-- C-PROGRAMMING MODAL STARTS -->
+  <div id="cprogrammingModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- Modal Content: begins -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title w-100" id="gridSystemModalLabel"><!--Title--></h4>
+        </div>
+        <!-- Modal Body -->  
+        <div class="modal-body">
+          <div class="body-message">
+            <h4>C-Programming</h4>
+            <p>  
+                Check for occurances of two characters in a string with user input and without user input, program for weight, and reverse array.
+            </p>
+          </div>
+        </div>                    
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>                   
+      </div>
+    </div>
+  </div>
+      <!-- Modal Content: ends -->    
+  <!-- C-PROGRAMMING MODAL ENDS --> 
+
+   <!-- OVERTHEWIRE MODAL STARTS -->
+   <div id="overthewireModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- Modal Content: begins -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title w-100" id="gridSystemModalLabel"><!--Title--></h4>
+        </div>
+        <!-- Modal Body -->  
+        <div class="modal-body">
+          <div class="body-message">
+            <h4>OverTheWire</h4>
+            <p> 
+              Completed the Bandit exersice, completed some of the Leviathan exersice, completed some of the Natas exersices.
+            </p>
+          </div>
+        </div>                    
+        <!-- Modal Footer -->
+        <div class="modal-footer w-100">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>                   
+      </div>
+    </div>
+  </div>
+      <!-- Modal Content: ends -->    
+  <!-- OVERTHEWIRE MODAL ENDS --> 
+
+
+   <!-- SCRIPTS MODAL STARTS -->
+  <div id="scriptsModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- Modal Content: begins -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title w-100" id="gridSystemModalLabel"><!--Title--></h4>
+        </div>
+        <!-- Modal Body -->  
+        <div class="modal-body">
+          <div class="body-message">
+            <h4>Scripts</h4>
+            <p>  
+              a simple wificonfig script.
+            </p>
+          </div>
+        </div>                    
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>                   
+      </div>
+    </div>
+  </div>
+  <!-- Modal Content: ends -->    
+
+  <!-- ==================================================================================================================================================================== -->
+  <!-- =========================================================================== END MODALS ============================================================================= -->
+  <!-- ==================================================================================================================================================================== -->
+
+  <!-- ==================================================================================================================================================================== -->
+  <!-- ===========================================================================START JAVA SCRIPTS ====================================================================== -->
+  <!-- ==================================================================================================================================================================== -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+
+  <!-- Template Main JS File -->
   
-     <!-- OVERTHEWIRE MODAL STARTS -->
-     <div id="overthewireModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <!-- Modal Content: begins -->
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">OverTheWire</h4>
-          </div>
-          <!-- Modal Body -->  
-          <div class="modal-body">
-            <div class="body-message">
-              <h4>OverTheWire</h4>
-              <p> 
-                I have written simple programs in C, such as a program for weight, reversing arrays, and checking for characters in a string. 
-              </p>
-            </div>
-          </div>                    
-          <!-- Modal Footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>                   
-        </div>
-      </div>
-    </div>
-        <!-- Modal Content: ends -->    
-    <!-- OVERTHEWIRE MODAL ENDS --> 
+  <script src="assets/js/main.js"></script>
+
+  <!-- END OF MAIN JS FILE -->
+
+  <!-- JAVA SCRIPT FOR SEND EMAIL UNDER CONTACT SECTION -->
+  
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+   emailjs.init('user_6KnwgniTfNXhnbictDiLQ')
+  </script>
+
+  <!-- END OF JAVA SCRIPT FOR SEND EMAIL UNDER CONTACT SECTION -->
 
 
-     <!-- SCRIPTS MODAL STARTS -->
-     <div id="scriptsModal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <!-- Modal Content: begins -->
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">Scripts</h4>
-          </div>
-          <!-- Modal Body -->  
-          <div class="modal-body">
-            <div class="body-message">
-              <h4>Scripts</h4>
-              <p>  
-                a simple wificonfig script.
-              </p>
-            </div>
-          </div>                    
-          <!-- Modal Footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>                   
-        </div>
-      </div>
-    </div>
-        <!-- Modal Content: ends -->    
-    <!-- SCRIPTS MODAL ENDS --> 
+  <!-- Start Sweet Alert 2 Script Source Site(s) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- End Sweet Alert 2 Script Source Site(s) -->
 
 
-    <!-- ==================================================================================================================================================================== -->
-    <!-- ==================================================================================================================================================================== -->
+         <!-- ================================================================================================================================================================================== -->
+         <!-- ==================================================================== END JAVA SCRIPTS ============================================================================================-->
+         <!-- ================================================================================================================================================================================== -->
 
 
-  <!-- ================================================================================================================================================================================ -->
-</body> <!-- ===================================================================== END OF BODY ======================================================================================== -->
-<!-- ================================================================================================================================================================================== -->
+
+        <!-- ================================================================================================================================================================================== -->
+</body> <!-- ===================================================================== END OF BODY ================================================================================================ -->
+        <!-- ================================================================================================================================================================================== -->
 
 </html>

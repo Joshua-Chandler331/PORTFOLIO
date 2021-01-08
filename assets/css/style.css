@@ -189,7 +189,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: lightpink;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -723,6 +723,7 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -763,7 +764,7 @@ a:hover {
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: #fff;
+  background-color: lightpink; /* CHANGED BACKGROUND */
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -797,28 +798,54 @@ a:hover {
   color: #4e4e4e;
 }
 
-/* MODAL */
+/* ----------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
 .wrap { 
   padding: 15px; 
 }
 
 h1 { 
-  font-size: 28px; 
+  font-size: 28px;
 }
+
 h4,
-modal-title { 
-  font-size: 18px; font-weight: bold; 
+.modal-title { 
+  font-size: 18px; 
+  font-weight: bold; 
+  text-align: center;/* center */
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  padding-top: 190px; /* padding percentage from top */
+  top: 0;  /* when modal starts top */
+  left: 0; /* when modal starts left */
+  display: none; 
+  width: 100%; /* Full width */
+  height: 100%; /* full height */
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: lightpink;
+  margin: auto;
+  padding: 10px;
+  border: 10px solid #888;
 }
 
 .no-borders { 
   border: 0px; 
 }
+
 .body-message { 
   font-size: 18px; 
 }
+
 .centered { 
   text-align: center; 
 }
+
 .btn-primary { 
   background-color: #2086c1; 
   border-color: transparent;
@@ -827,10 +854,12 @@ modal-title {
   font-size: 15px;
   padding: 10px 25px; 
 }
+
 .btn-primary:hover { 
   background-color: #2086c1; 
   border-color: transparent; 
 }
+
 .btn-primary:focus { 
   outline: none; 
 }
@@ -1418,3 +1447,9 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+
+
+/*--------------------- BLOG_SINGLE_START CSS THINGS --------------------------*/
+
+/*---------------------- END BLOG CSS THINGS ------------------------------------*/
