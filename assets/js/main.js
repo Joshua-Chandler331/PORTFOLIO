@@ -193,17 +193,3 @@ document.getElementById('form')
     }); /* end then statement */
 });/* end emailjs send form */
 /* END OF CODE FOR THE SUBMIT FORM FOR EMAIL CODE*/
-
-
-
-/* TEMPORARY JS */
-/* NEW UNDER CONSTRUCTION  */
-function myFunction(){
-  Swal.fire({
-    title:'UNDER CONSTRUCNTION ( NOT A SCAM )',
-    width: 600,
-    padding: '3em',
-    background: `url(assets/img/WorkingOnIT.gif)`,
-  })
-}
-/* END UNDER CONSTRUCTION */
