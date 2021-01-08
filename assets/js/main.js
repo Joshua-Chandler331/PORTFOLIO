@@ -198,7 +198,6 @@ document.getElementById('form')
 
 /* TEMPORARY JS */
 /* NEW UNDER CONSTRUCTION  */
-/*
 function myFunction(){
   Swal.fire({
     title:'UNDER CONSTRUCNTION ( NOT A SCAM )',
@@ -207,5 +206,4 @@ function myFunction(){
     background: `url(assets/img/WorkingOnIT.gif)`,
   })
 }
-*/
 /* END UNDER CONSTRUCTION */
