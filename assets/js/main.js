@@ -53,6 +53,7 @@
     time: 2000
   });
 
+
   /*--/ Star Scrolling nav /--*/
   var mainNav_height = $('#mainNav').outerHeight() - 22;
   $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
@@ -124,20 +125,21 @@
       backSpeed: 30
     });
   }
-
-  /*--/ Testimonials owl /--*/
-  $('#testimonial-mf').owlCarousel({
-    margin: 20,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
+      /* MAY NOT NEED KEEP IN CASE OF EMERGENCY */
+    /*--/ Testimonials owl /--*/
+    $('#testimonial-mf').owlCarousel({
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        }
       }
-    }
-  });
-
+    });
+  
+  
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
@@ -145,6 +147,34 @@
     loop: true,
     items: 1
   });
+
+
+/* BEGINNING OF CODE FOR EMAIL SUBMITT FORM FOR EMAIL CODE */
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_33v4b6j';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+
+/* END OF CODE FOR THE SUBMIT FORM FOR EMAIL CODE*/
+
 
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {

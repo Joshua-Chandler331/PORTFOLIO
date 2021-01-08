@@ -796,9 +796,49 @@ a:hover {
   color: #4e4e4e;
 }
 
+/* MODAL */
+.wrap { 
+  padding: 15px; 
+}
+
+h1 { 
+  font-size: 28px; 
+}
+h4,
+modal-title { 
+  font-size: 18px; font-weight: bold; 
+}
+
+.no-borders { 
+  border: 0px; 
+}
+.body-message { 
+  font-size: 18px; 
+}
+.centered { 
+  text-align: center; 
+}
+.btn-primary { 
+  background-color: #2086c1; 
+  border-color: transparent;
+  outline: none; 
+  border-radius: 8px; 
+  font-size: 15px;
+  padding: 10px 25px; 
+}
+.btn-primary:hover { 
+  background-color: #2086c1; 
+  border-color: transparent; 
+}
+.btn-primary:focus { 
+  outline: none; 
+}
+
+/* END OF MODAL */
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
+
 .counter-box {
   color: #fff;
   text-align: center;
@@ -825,6 +865,8 @@ a:hover {
   font-size: 2rem;
   margin-bottom: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -970,6 +1012,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+
 .testimonials .owl-carousel .owl-item img {
   width: auto;
 }
@@ -1195,8 +1238,8 @@ a:hover {
 
 .card-blog .post-date {
   color: #4e4e4e;
+  /*float: right;              commented out*/
   display: inline-block;
-  float: right;
 }
 
 /*--------------------------------------------------------------
