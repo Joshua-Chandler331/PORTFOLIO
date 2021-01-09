@@ -11,7 +11,7 @@
 body {
   background-image: url(/assets/img/service-bg.jpg);
   background-color: #f5f5f5;
-  color: #4e4e4e;
+  color: white;
 }
 
 h1,
@@ -20,11 +20,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: white;
 }
 
 a {
-  color: #1e1e1e;
+  color: white;
   transition: all 0.5s ease-in-out;
 }
 
@@ -138,7 +138,7 @@ a:hover {
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: white;
   font-size: 1.1rem;
 }
 
@@ -151,6 +151,7 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: white;
 }
 
 .subtitle-a {
@@ -191,7 +192,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: lightpink;
+  background-color: black;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -766,7 +767,7 @@ a:hover {
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: lightpink; /* CHANGED BACKGROUND */
+  background-color: black; /* CHANGED BACKGROUND */
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -787,6 +788,7 @@ a:hover {
 .service-box .ico-circle {
   transition: all 500ms ease;
   font-size: 4rem;
+  color: white;
 }
 
 .service-box .s-title {
@@ -794,6 +796,7 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   padding: .4rem 0;
+  color: white;
 }
 
 .service-box .s-description {
@@ -843,10 +846,10 @@ h4,
 }
 
 .modal-content {
-  background-color: lightpink;
+  background-color: black;
   margin: auto;
   padding: 10px;
-  border: 10px solid #888;
+  border: 10px solid green;
 }
 
 .no-borders { 
@@ -865,8 +868,8 @@ h4,
   background-color: #2086c1; 
   border-color: transparent;
   outline: none; 
-  border-radius: 8px; 
-  font-size: 15px;
+  border-radius: 10px; 
+  font-size: 20px;
   padding: 10px 25px; 
 }
 
