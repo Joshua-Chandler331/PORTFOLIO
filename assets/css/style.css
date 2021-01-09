@@ -849,7 +849,7 @@ h4,
   background-color: black;
   margin: auto;
   padding: 10px;
-  border: 10px solid green;
+  border: 3px solid green;
 }
 
 .no-borders { 
@@ -882,6 +882,15 @@ h4,
   outline: none; 
 }
 
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 1px black;
+  opacity: .5;
+}
 /* END OF MODAL */
 /*--------------------------------------------------------------
 # Counter
