@@ -104,7 +104,7 @@
   <!-- ================================================================================================================================================================================== -->
   <!-- ================================================================= BEGIN INTRO SECTION ============================================================================================ -->
   <!-- ================================================================================================================================================================================== -->
-  <div id="home" class="intro route bg-image" style="background-image: url(assets/img/intro-bg.jpg)">
+  <div id="home" class="intro route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
     
     <!-- START OF OVERLAY-ITRO -->
     <div class="overlay-itro"></div>
@@ -511,16 +511,17 @@
 
 
     <!-- ================================================================================================================================================================================== -->
-    <!-- ====================================================================================  End Services Section ======================================================================= -->
+    <!-- ==============================================================================  End Services Section ============================================================================= -->
     <!-- ================================================================================================================================================================================== -->
 
     
     <!-- ================================================================================================================================================================================== -->
-    <!-- =============================================================================== BEGIN Contact Section ============================================================================-->
+    <!-- =============================================================================== BEGIN Contact Section ============================================================================ -->
     <!-- ================================================================================================================================================================================== -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact">
+    <!-- NEED TO FIX CONTACT BACKGROUND SECTION AND IMAGE!!! -->
+    <section id="contact" style="background-image: assets/img/intro-bg" >
 
       <!-- START OF CONTAINER-->
       <div class="container">
@@ -552,8 +553,7 @@
                           <!-- NAME FOR MESSAGE/EMAIL DIVIsION -->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
-                              
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>                              
                             </div>
                           </div>
                           <!-- END OF NAME FOR MESSAGE/EMAIL DIVIsION -->
@@ -562,19 +562,18 @@
                           <!-- EMAIL FOR MESSAGE/EMAIL DIVIsION -->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
-                             
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>                             
                             </div>
-                          </div>
+                          </div> <!-- END COL-MD-12 DIVISION-->
                           <!-- END OF EMAIL FOR MESSAGE/EMAIL DIVIsION -->
+
 
                           <!-- SUBJECT FOR MESSAGE/EMAIL DIVIsION -->
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>
-                              
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>                             
                             </div>
-                          </div>
+                          </div> <!-- END COL-MD-12 DIVISION-->
                           <!-- END OF SUBJECT FOR MESSAGE/EMAIL DIVIsION-->
 
 
@@ -582,14 +581,14 @@
                           <div class="col-md-12">
                             <div class="form-group">
                               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for me" placeholder="Message" required></textarea>
-                              
-                            </div>
-                          </div>
+                            </div> <!-- END FORM-GROUP DIVISION -->
+                          </div> <!-- END COL-MD-12 DIVISION -->
                           <!-- END OF MESSAGE FOR EMAIL SECTION -->
+
 
                           <div class="col-md-12 text-center">
                             <button type="submit" id="sendButton" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
+                          </div> <!-- END COL-MD-12 DIVISION -->
                         </div> <!-- END OF ROW DIVISION -->
                       </form> <!-- END OF FORM -->
                     </div> <!-- END OF FORM DIVIsION-->
@@ -603,10 +602,14 @@
                           Social media
                         </h5>
                       </div> <!-- END OF COL-MD-6 DIVIsION -->
+
+
                     <!-- PERSONAL INFORMATION -->
                     <div class="more-info">
                       <p class="lead">
                       </p>
+
+
                       <!-- START ELEMENT LIST -->
                       <ul class="list-ico">
                         <li><span class="ion-ios-location"></span> 8027 stonehaven drive</li>
@@ -637,6 +640,7 @@
         </div> <!-- END OF ROW DIVIsION-->
       </div> <!-- END OF CONTAINER -->
     </section> <!-- END OF SECTION -->
+
     <!-- ================================================================================================================================================================================ -->
     <!-- ================================================================================ End Contact Section ===========================================================================-->
     <!-- ================================================================================================================================================================================ -->
@@ -666,32 +670,39 @@
         </div> <!-- END COL-SM-12 DIVIsION -->
       </div> <!-- END ROW DIVIsION -->
     </div> <!-- END CONTAINER DIVIsION -->
-  </footer><!-- End  Footer -->
+  </footer><!-- END FOOTER -->
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
   <!-- ================================================================================================================================================================================== -->
-  <!-- ============================================================================== END FOOTER ======================================================================================== -->
+  <!-- ================================================================================= END FOOTER ===================================================================================== -->
   <!-- ================================================================================================================================================================================== -->
 
 
-<!-- ================================================================================================================================================================================== -->
-  <!-- ================================================================================ START SKILLS MODALS ==================================================================================== -->
+  <!-- ================================================================================================================================================================================== -->
+  <!-- ================================================================================ START SKILLS MODALS ============================================================================= -->
   <!-- ================================================================================================================================================================================== -->
 
   <!-- CHECK W-100 IN h4 class needs to be moved to css keep css for styles & possibly remove h4.. hackish.. TOO MUCH TIME RIGHT NOW -->
   <!-- MAYBE LATER CHANGE THE CLOSE TO A GITHUV URL OR TO MY BLOG POST -->
 
-<!-- HTML5 MODAL STARTS -->
+
+  <!-- HTML5 MODAL STARTS -->
   <div id="html5Modal" class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
+
+
       <!-- Modal Content: begins -->
       <div class="modal-content">
+
+
         <!-- Modal Header -->
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title w-100" id="gridSystemModalLabel"><!--Title--></h4>
-        </div>
+            <h4 class="modal-title w-100" id="gridSystemModalLabel"> <!--Title--> </h4>
+        </div> <!-- MODAL HEADER DIVISION ENDS -->
+
+
         <!-- Modal Body -->  
         <div class="modal-body">
           <div class="body-message">
@@ -699,16 +710,19 @@
             <p>
               HTML5 STUFF
             </p>
-          </div>
-        </div>                    
+          </div> <!-- BODY MESSAGE ENDS -->
+        </div> <!-- MODAL BODY DIVISION ENDS -->
+        
+        
         <!-- Modal Footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>                   
-      </div>
-    </div>
-  </div>
+        </div> <!-- MODAL FOOTER DIVISION ENDS -->                  
+      </div> <!-- MODAL CONTENT ENDS -->
+    </div> <!-- MODAL DIALOG ENDS -->
+  </div> <!-- HTML5 MODAL ENDS -->
       <!-- Modal Content: ends --> 
+
 <!-- WEB MODAL ENDS -->
 
 
@@ -1026,10 +1040,11 @@
             <h4>FizzBuzz</h4>
             <p>FizzBuzz stuff</p>
           </div>
-        </div>                    
+        </div>
+
         <!-- Modal Footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+         <button type="button" target="_blank" onclick="location.href = '/mini-sites/solve.html'" class="btn btn-primary" data-dismiss="modal">Play</button></a>
         </div>                   
       </div>
     </div>
