@@ -10,7 +10,6 @@ function SunsetHills(){
     let num4 = parseInt(document.getElementById("shInput4").value);
     let num5 = parseInt(document.getElementById("shInput5").value);
 
-
     let userArray = new Array();
     userArray.push(num1);
     userArray.push(num2);
@@ -18,12 +17,9 @@ function SunsetHills(){
     userArray.push(num4);
     userArray.push(num5);
 
-
-
     let maxNum = userArray[0];
     let acendingArray = new Array();
     acendingArray.push(maxNum);
-
 
     for (let loop=1; loop < userArray.length; loop++){
         if( userArray[loop] > maxNum ){
@@ -37,14 +33,11 @@ function SunsetHills(){
     document.getElementById("output").innerText = `The Ascending array is [${acendingArray.join(`, `)}]`;
 }
 
-
 function Clear(){
-
     document.getElementById("shInput1").value = "";
     document.getElementById("shInput2").value = "";
     document.getElementById("shInput3").value = "";
     document.getElementById("shInput4").value = "";
     document.getElementById("shInput5").value = "";
     document.getElementById("output").innerText = "";
-
 }

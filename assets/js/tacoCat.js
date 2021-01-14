@@ -1,10 +1,7 @@
 //This uses an anonymous function to call a named function
 document.getElementById("tacoButton").addEventListener("click", function () {
-
     const wrd1 = document.getElementById("input1").value;
-
         runTheNumbers(wrd1)
-
 });
 
 document.getElementById("Clear").addEventListener("click", Clear);
@@ -21,7 +18,8 @@ function runTheNumbers(wrd1) {
         document.getElementById("result").innerHTML = "PALADINE";
         document.getElementById("result2").innerHTML = `${wrd3}`;
     }
-    else{
+    else
+    {
         document.getElementById("result").innerHTML = "NOT A PALADINE";
         document.getElementById("result2").innerHTML = `${wrd3}`;
     }
