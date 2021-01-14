@@ -8,17 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fizzbuzz.css">
+    <link rel="stylesheet" href="">
     </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: black">
-        <a class="navbar-brand" href="#">FizzBuzz</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <a class="navbar-brand" href="index.html">Fizz Buzz</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/index.html">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">index</a>
@@ -27,7 +27,7 @@
                     <a class="nav-link" href="code.html">Code</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="solve.html">Solve<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="solve.html">Solve <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="_blank">GitHub</a>
@@ -36,26 +36,36 @@
         </div>
     </nav>
 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">FizzBuzz</h1>
+            <p class="lead">Write a program that prints the numbers from 1 to 100.
+                But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
+                For numbers which are multiples of both threeand five print “FizzBuzz”.</p>
+            <hr class="my-2">
+        </div>
+    </div>
 
     <div class="container pt-5">
         <div class="row">
             <div class="col">
-                <input class="form-control" id="input1" placeholder="Enter a number" value="3" type="number" />
+                <input class="form-control" id="input1" placeholder="Enter a number" value="3" type="number"/>
             </div>
             <div class="col form-group">
-                <input class="form-control" id="input2" value="5" />
+                <input class="form-control" id="input2" value="5"/>
             </div>
         </div>
         <div class="row">
             <div class="col-6 offset-3">
-                <button class="btn btn-outline-danger btnWide" id="fizzButton" value="Click Me">Click Me</button>
+                <button class="btn btn-dark mt-3" style="min-width:100%" id="fizzButton">Fizz Buzz Time</button>
+                <button class="btn btn-dark mt-3" style="min-width:100%" id="Clear">Clear</button>
             </div>
         </div>
         <div class="row">
-            <div class="col-4 offset-6">
-                <p>I will show results</p>
-                <hr />
-                <p id="results"></p>
+            <div class="row">
+                <div class="col">
+                  <p id="results"></p>
+                </div>
             </div>
         </div>
     </div>

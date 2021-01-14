@@ -5,6 +5,10 @@
         runTheNumbers(num1, num2)
     });
 
+
+    document.getElementById("Clear").addEventListener("click", Clear);
+
+
     //When the button is clicked I want to perform a looping operation that loops 100 times
     function runTheNumbers(num1, num2){
 
@@ -42,3 +46,8 @@
 
         document.getElementById("results").innerText += str1;
     }
+
+    
+function Clear(){
+    document.getElementById("results").innerText = "";
+}

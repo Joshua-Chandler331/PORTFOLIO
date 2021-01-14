@@ -8,7 +8,6 @@ function runTheNumbers() {
     let numk = document.getElementById("numK").value;
     let num1, num2, num3, num4, num5 = -1;
 
-    document.getElementById("result").innerHTML = `${numbers} `;
     // Loop For 1 number to be added through the array
     for(let loop = 0; loop <= numbers.length; loop ++){
         num1 = numbers[loop];
@@ -17,12 +16,10 @@ function runTheNumbers() {
             num2 = numbers[loop2];
             num3 = num1 + num2;
             // check if 1st number and 2nd number sum to numk and NO REPEATS
-            if(num1 != num2){
-                if (num3 == numk)
+                if (num1 != num2 && num3 == numk)
                 {
                     num5 = 0;
                 }
-            }
         }
     } 
     if(num5 == 0) {
@@ -34,7 +31,6 @@ function runTheNumbers() {
 }
 
 function runTheClear(){
-    document.getElementById("result").innerHTML = "";
     document.getElementById("result2").innerHTML = "";
 }
 
